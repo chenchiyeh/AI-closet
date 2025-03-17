@@ -1,0 +1,1 @@
+print("This is to generate iamges of clothes")
