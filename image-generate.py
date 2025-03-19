@@ -28,7 +28,11 @@ def generate_image(prompt):
         print("Error:", response.text)
 
 # Example usage:
-preset = "Please generate without a human wearing it, just the piece of described clothing on a hanger in a white room. The clothing is: "
+preset = "This image will be used later through a Neural Style Transfer process to get the final result, so the image should be clear and visible.\n" \
+" 1) the image should have no human wearing it, " \
+"  2) the image should be alone with no other piece of clothing " \
+"3) the piece of described clothing should be on a hanger alone with a white background" \
+"The clothing is: "
 prompt = "A black fuzzy cardigan with grey buttons and collar"
 generate_image(preset + prompt)
 
